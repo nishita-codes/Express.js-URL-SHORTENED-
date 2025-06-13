@@ -71,3 +71,51 @@ button{
     display: flex;
     align-items: center;
 }
+
+/* .shortened-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.shortened-list li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.shortened-list a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.shortened-list a:hover {
+  text-decoration: underline;
+} */
+
+
+/* Remove default list styling */
+.shortened-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Style each list item */
+.shortened-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Style the anchor tags inside list */
+.shortened-list a {
+  color: #1a73e8; /* brighter, modern blue */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Hover effect for links */
+.shortened-list a:hover {
+  text-decoration: underline;
+  color: #155ab6;
+}
+

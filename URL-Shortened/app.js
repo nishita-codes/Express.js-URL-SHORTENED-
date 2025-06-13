@@ -37,7 +37,7 @@ app.get("/", async (req,res)=>{
        const file = await readFile(path.join(__dirname,"views","index.html"));
        const links = await loadLinks();
 
-       const content = file.toString().replaceAll("{{ shortened_url}}", Object.entries(links).map(([shortCode , url])=> `<li><a href="/${shortCode}" target="_blank">${req.host}/${shortCode}</a> -> ${url}
+       const content = file.toString().replaceAll("{{ shortened_url }}", Object.entries(links).map(([shortCode , url])=> `<li><a href="/${shortCode}" target="_blank">${req.host}/${shortCode}</a> -> ${url}
        </li>`)
         .join("")
       );
